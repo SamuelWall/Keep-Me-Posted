@@ -1,6 +1,7 @@
 {
     "name": "Keep Me Posted Chrome Extension",
     "version": "1.0",
+    "author": "Sam Wolnerman and Ben Gilman",
     "description": "An Extension that synces user's social media accounts",
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "background": {
