@@ -3,12 +3,21 @@
     "version": "1.0",
     "author": "Sam Wolnerman and Ben Gilman",
     "description": "An Extension that synces user's social media accounts",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": [
+                    "activeTab",
+                    "declarativeContent",
+                    "storage",
+                    "cookies",
+                    "tabs",
+                    "*://www.instagram.com/",
+                    "*://*/*",
+                    "<all_urls>"
+                  ],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
-    "page_action": {
+    "browser_action": {
       "default_popup": "popup.html"
     },
     "options_page": "options.html",
